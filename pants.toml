@@ -1,0 +1,16 @@
+[GLOBAL]
+pants_version = "2.11.0"
+
+pythonpath = ["%(buildroot)s/pants-plugins"]
+
+backend_packages = [
+  "pants.backend.python",
+  "pants.backend.python.typecheck.mypy",
+  "pants.backend.plugin_development",  
+  "example",
+]
+
+[source]
+root_patterns = [
+  "pants-plugins"
+]
